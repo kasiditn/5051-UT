@@ -19,15 +19,16 @@ namespace UnitTests.Models
             //Assert
             Assert.IsNotNull(result);
         }
-
+        [TestMethod]
         public void ReportViewModel_NumberOfUsers_Get_Default_Should_Pass()
         {
-            //Arrange
+            // Arrange
+            var myTest = new ReportViewModel();
 
-            //Action
-            var result = new ReportViewModel();
+            // Act
+            var result = myTest.NumberOfUsers;
 
-            //Assert
+            // Assert
             Assert.IsNotNull(result);
         }
 
