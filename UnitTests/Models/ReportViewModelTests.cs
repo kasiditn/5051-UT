@@ -35,7 +35,16 @@ namespace UnitTests.Models
         [TestMethod]
         public void ReportViewModel_NumberOfUsers_Set_Default_Should_Pass()
         {
-            
+            // Arrange
+            var myTest = new ReportViewModel();
+            var numUsers = 20;
+
+            // Act
+            myTest.NumberOfUsers = numUsers;
+            var result = myTest.NumberOfUsers;
+
+            // Assert
+            Assert.AreEqual(numUsers, result);
         }
 
 
