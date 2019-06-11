@@ -63,7 +63,17 @@ namespace UnitTests.Models
         [TestMethod]
         public void ReportViewModel_LogViewModel_Set_Default_Should_Pass()
         {
-          
+            // Arrange
+            var myTest = new ReportViewModel();
+            var myLogView = new LogViewModel();
+            myLogView.LogList.Add(new LogModel { PhoneID = "Phone" });
+
+            // Act
+            myTest.LogViewModel = myLogView;
+            var result = myTest.LogViewModel.LogList;
+
+            // Assert
+            Assert.AreEqual("Phone", result[0].PhoneID);
         }
 
     }
