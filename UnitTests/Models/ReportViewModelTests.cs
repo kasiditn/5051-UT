@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using HW1c.Models;
+using System.Collections.Generic;
 
 namespace UnitTests.Models
 {
@@ -9,7 +11,13 @@ namespace UnitTests.Models
         [TestMethod]
         public void ReportViewModel_Instantiate_Default_Should_Pass()
         {
+            //Arrange
 
+            //Action
+            var result = new ReportViewModel();
+
+            //Assert
+            Assert.IsNotNull(result);
         }
     }
 }
