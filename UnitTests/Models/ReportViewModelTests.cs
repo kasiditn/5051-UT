@@ -19,5 +19,10 @@ namespace UnitTests.Models
             //Assert
             Assert.IsNotNull(result);
         }
+
+        public void ReportViewModel_Get_LogViewModel_Default_Should_Pass()
+        {
+     
+        }
     }
 }
