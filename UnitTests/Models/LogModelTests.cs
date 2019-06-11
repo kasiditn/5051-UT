@@ -58,7 +58,7 @@ namespace UnitTests.Models
             // Business rule is that the ID is not updatable.  
             // So need to add a test to verify that the ID does not change
             // If the code has a bug, fix the bug and enable the test assert
-            
+
             // Arange
             var myTest = new LogModel();
             var myUpdate = new LogModel
@@ -74,7 +74,7 @@ namespace UnitTests.Models
             var result = myTest.Update(myUpdate);
 
             // Assert
-            //Assert.AreEqual(myTestID, myTest.ID);
+            Assert.AreEqual(myTestID, myTest.ID);
         }
     }
 }
