@@ -22,7 +22,14 @@ namespace UnitTests.Models
 
         public void ReportViewModel_Get_LogViewModel_Default_Should_Pass()
         {
-     
+            //Arrange
+            var myTest = new ReportViewModel();
+
+            //Action
+            var result = myTest.LogViewModel;
+
+            //Assert
+            Assert.IsNotNull(result);
         }
     }
 }
